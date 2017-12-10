@@ -1,0 +1,37 @@
+body {
+    max-width: 925px;
+    margin: auto;
+}
+
+.section {
+    background-color: lightgrey;
+    display: inline-block;
+    vertical-align: text-top;
+    width: 300px;
+}
+
+.valueSpan {
+    display: inline-block;
+    width: 300px;
+    color: red;
+}
+
+#col1 {
+    width: 300px;
+    background-color: lightblue;
+    vertical-align: text-top;
+    margin: 5px;
+    padding: 0px;
+}
+
+#col2 {
+    width: 600px;
+    display: inline-block;
+    background-color: lightgreen;
+    margin: 5px;
+    padding: 0px;
+}
+
+#section_5, #section_8 {
+    width: 600px;
+}
