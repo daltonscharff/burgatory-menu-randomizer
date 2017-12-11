@@ -1,18 +1,23 @@
 body {
     margin: auto;
-    width: 1000px;
+    width: 950px;
 }
 
 form {
     margin: auto;
 }
 
+button {
+    margin: auto;
+    margin-top: 50px;
+    display: block;
+    width: 200px;
+    height: 35px;
+}
+
 .grid-container {
     display: inline-grid;
     grid-template-columns: 310px 650px;
-    background-color: darkgrey;
-    /*grid-column-gap: 20px;
-    padding: 20px;*/
 }
 
 .grid-item {
@@ -20,36 +25,27 @@ form {
 }
 
 .section {
-    background-color: lightgrey;
     display: inline-block;
     vertical-align: text-top;
+    font-family: 'Open Sans', sans-serif;
     width: 300px;
     margin: 5px;
+    margin-bottom: 15px;
+}
+
+.sectionLabel {
+    background-color: #ff9739;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 3px;
 }
 
 .valueSpan {
     display: inline-block;
-    width: 300px;
-}
-
-#col1 {
-    display: inline-block;
-    width: 300px;
-    background-color: lightblue;
-    margin: 5px;
-    padding: 0px;
-    vertical-align: text-top;
-}
-
-#col2 {
-    display: inline-block;
-    width: 600px;
-    background-color: lightgreen;
-    margin: 5px;
-    padding: 0px;
-    vertical-align: text-top;
+    width: 310px;
 }
 
 #section_5, #section_8 {
-    width: 600px;
+    width: 630px;
 }

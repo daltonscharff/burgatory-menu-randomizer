@@ -2,7 +2,6 @@ function displayForm() {
     var form = document.getElementsByTagName("form")[0];
 
     var columns = getArrayOfTags("div", form.getElementsByTagName("div")[0]);
-    console.log(columns);
 
     menu.sections.forEach(function(section, sectionIndex) {
         var sectionSpan = makeSection(section, sectionIndex);
@@ -11,7 +10,7 @@ function displayForm() {
 }
 
 function getArrayOfTags(tag, element) {
-    var elements = {};
+    var elements = [];
     for (var i = 0; i < element.getElementsByTagName(tag).length; i++) {
         elements[i] = element.getElementsByTagName(tag)[i];
     }
@@ -23,18 +22,19 @@ function makeSection(section, sectionIndex) {
     sectionSpan.setAttribute("class", "section");
     sectionSpan.setAttribute("id", "section_" + sectionIndex);
 
-    var sectionBr = document.createElement("BR");
-
-    var sectionLabel = document.createElement("LABEL");
+    var sectionLabel = document.createElement("DIV");
+    sectionLabel.setAttribute("class", "sectionLabel");
     sectionLabel.innerHTML = section.title;
     sectionSpan.appendChild(sectionLabel);
-    sectionSpan.appendChild(sectionBr);
 
     section.options.forEach(function(option, optionIndex) {
         var valueSpan = document.createElement("SPAN");
         valueSpan.setAttribute("class", "valueSpan");
         var valueLabel = document.createElement("LABEL");
         valueLabel.innerHTML = option.value;
+        if (option.cost) {
+            valueLabel.innerHTML += "&nbsp&nbsp&nbsp&nbsp<b>$" + option.cost + "</b>";
+        }
 
         var selection = document.createElement("INPUT");
         selection.name = section.title;
@@ -59,7 +59,6 @@ function makeSection(section, sectionIndex) {
 }
 
 function assignSpanToColumn(sectionSpan, columns) {
-    console.log(sectionSpan.id);
     if (sectionSpan.id == "section_0") {
         columns[0].appendChild(sectionSpan);
     } else {
