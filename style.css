@@ -1,10 +1,12 @@
 body {
     margin: auto;
-    width: 950px;
+	text-align: center;
 }
 
 form {
     margin: auto;
+	display: inline-block;
+	text-align: left;
 }
 
 button {
@@ -17,30 +19,30 @@ button {
 
 .grid-container {
     display: inline-grid;
-    grid-template-columns: 310px 650px;
-}
-
-.grid-item {
-
+    grid-template-columns: auto auto auto;
 }
 
 .section {
-    display: inline-block;
-    vertical-align: text-top;
     font-family: 'Open Sans', sans-serif;
-    width: 300px;
     margin: 5px;
     margin-bottom: 15px;
+	background-color: lightgrey;
 }
 
-.sectionLabel {
+.section-label {
     background-color: #ff9739;
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     text-transform: uppercase;
-    padding: 3px;
+	padding-left: 5px;
+	padding-right: 5px;
 }
 
+#grid-item-4, #grid-item-9 {
+	grid-column: 2 / span 2;
+}
+
+/*
 .valueSpan {
     display: inline-block;
     width: 310px;
@@ -49,3 +51,4 @@ button {
 #section_5, #section_8 {
     width: 630px;
 }
+*/
