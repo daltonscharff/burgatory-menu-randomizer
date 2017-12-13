@@ -27,6 +27,7 @@ button {
     margin: 5px;
     margin-bottom: 15px;
 	background-color: lightgrey;
+	white-space: nowrap;
 }
 
 .section-label {
@@ -38,17 +39,15 @@ button {
 	padding-right: 5px;
 }
 
-#grid-item-4, #grid-item-9 {
+._ItUp {
+	font-family: 'Work Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+#grid-item-4, #grid-item-7 {
 	grid-column: 2 / span 2;
 }
 
-/*
-.valueSpan {
-    display: inline-block;
-    width: 310px;
+#grid-item-3 {
+	grid-row: 2 / span 3;
 }
-
-#section_5, #section_8 {
-    width: 630px;
-}
-*/
