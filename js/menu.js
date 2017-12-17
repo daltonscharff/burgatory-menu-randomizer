@@ -17,7 +17,7 @@ var menu = {
             ]
         },
         {
-            "title":    "Pick a Burger",
+            "title":    "Pick A Burger",
             "limit":    1,
             "required": true,
             "options":  [
@@ -58,7 +58,7 @@ var menu = {
             ]
         },
         {
-            "title":    "Pick a Bun",
+            "title":    "Pick A Bun",
             "limit":    1,
             "required": true,
             "options":    [
@@ -94,7 +94,7 @@ var menu = {
             ]
         },
         {
-            "title":    "Pick a Rub",
+            "title":    "Pick A Rub",
             "limit":    1,
             "required": true,
             "options":  [

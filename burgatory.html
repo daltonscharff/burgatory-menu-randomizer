@@ -2,42 +2,45 @@
 <html>
 <head>
     <title>Burgatory Custom Burger Creator</title>
+
     <meta charset="utf-8">
     <meta name="description" content="Beware... the Devil's in the Details.">
     <meta name="author" content="Dalton Scharff">
-    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Work+Sans:900" rel="stylesheet">
-    <script src="menu.js"></script>
-    <script src="createForm.js"></script>
-    <script src="randomizeForm.js"></script>
-    <script src="onLoad.js"></script>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/createForm.js"></script>
+    <!-- <script src="js/randomizeForm.js"></script> -->
 </head>
-<!-- <body onload="onLoad()"> -->
 <body>
     <h1>Custom Burger Creator</h1>
+
     <form>
         <div class="grid-container">
             <div class="grid-item" id="grid-item-0">
 				<div class="_ItUp _ItUp-top">Start</div>
 				<div class="_ItUp _ItUp-bottom">It Up</div>
-				<div class="section" id="section-checkOne">
+				<div class="section" id="section-CHECK_ONE">
 					<label class="section-label">Check One</label>
 				</div>
             </div>
 			<div class="grid-item" id="grid-item-1">
-				<div class="section" id="section-pickABurger">
+				<div class="section" id="section-PICK_A_BURGER">
 					<label class="section-label">Pick A Burger</label>
 				</div>
-				<div class="section" id="section-pickARub">
+				<div class="section" id="section-PICK_A_RUB">
 					<label class="section-label">Pick A Rub</label>
 				</div>
             </div>
 			<div class="grid-item" id="grid-item-2">
-				<div class="section" id="section-pickABun">
+				<div class="section" id="section-PICK_A_BUN">
 					<label class="section-label">Pick A Bun</label>
 				</div>
-				<div class="section" id="section-getCheezy">
+				<div class="section" id="section-GET_CHEEZY">
 					<label class="section-label">Get Cheezy</label>
 				</div>
             </div>
@@ -46,26 +49,30 @@
 				<div class="_ItUp _ItUp-bottom">It Up</div>
             </div>
 			<div class="grid-item" id="grid-item-4">
-				<div class="section" id="section-sauceItUp">
+				<div class="section" id="section-SAUCE_IT_UP">
 					<label class="section-label">Sauce It Up</label>
 				</div>
             </div>
 			<div class="grid-item" id="grid-item-5">
-				<div class="section" id="section-$1BuckToppings">
+				<div class="section" id="section-$1_BUCK_TOPPINGS">
 					<label class="section-label">$1 Buck Toppings</label>
-				</div>				
+				</div>
             </div>
 			<div class="grid-item" id="grid-item-6">
-				<div class="section" id="section-noBuckToppings">
+				<div class="section" id="section-NO_BUCK_TOPPINGS">
 					<label class="section-label">No Buck Toppings</label>
-				</div>			
+				</div>
             </div>
 			<div class="grid-item" id="grid-item-7">
-				<div class="section" id="section-chipsAreFreeOrSub">
+				<div class="section" id="section-CHIPS_ARE_FREE_OR_SUB">
 					<label class="section-label">Chips Are Free Or Sub...</label>
 				</div>
             </div>
         </div>
     </form>
+
+    <script>
+        displayForm();
+    </script>
 </body>
 </html>

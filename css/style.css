@@ -22,10 +22,14 @@ button {
     grid-template-columns: auto auto auto;
 }
 
+.grid-item {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
 .section {
     font-family: 'Open Sans', sans-serif;
-    margin: 5px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 	background-color: lightgrey;
 	white-space: nowrap;
 }
