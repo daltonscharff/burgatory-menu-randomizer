@@ -9,10 +9,8 @@ form {
 	text-align: left;
 }
 
-button {
+input[type=button] {
     margin: auto;
-    margin-top: 50px;
-    display: block;
 }
 
 .grid-container {

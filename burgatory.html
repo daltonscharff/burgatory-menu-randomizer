@@ -14,9 +14,9 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/createForm.js"></script>
-    <!-- <script src="js/randomizeForm.js"></script> -->
+    <script src="js/randomizeForm.js"></script>
 </head>
-<body>
+<body onload="displayForm()">
     <h1>Custom Burger Creator</h1>
 
     <form>
@@ -27,7 +27,7 @@
 				<div class="section" id="section-CHECK_ONE">
 					<label class="section-label">Check One</label>
 				</div>
-                <button>Randomize</button>
+                <input type="button" id="randomizeButton" onclick="randomize();" value="Randomize"></input>
             </div>
 			<div class="grid-item" id="grid-item-1">
 				<div class="section" id="section-PICK_A_BURGER">
@@ -71,9 +71,5 @@
             </div>
         </div>
     </form>
-
-    <script>
-        displayForm();
-    </script>
 </body>
 </html>

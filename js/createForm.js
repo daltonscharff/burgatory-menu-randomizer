@@ -26,7 +26,7 @@ function makeSection(section, sectionIndex) {
         var selection = document.createElement("INPUT");
         selection.name = section.title;
         selection.value = option.value;
-        if (section.limit == 1 && section.required) {
+        if (section.limit == 1) {
             selection.setAttribute("type", "radio");
             if (optionIndex == 0){
                 selection.checked = true;

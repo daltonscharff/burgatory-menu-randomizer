@@ -10,20 +10,25 @@ function loadButton() {
 
 function randomize() {
     menu.sections.forEach(function(section, sectionIndex) {
+        var sectionTitle = section.title;
+        var sectionLimit = section.limit;
+        var required = section.required;
+        var options = section.options;
         var randoms = generateRandoms(section);
+        var sectionDiv = document.getElementById("section-" + sectionTitle.replace(/ /g, "_").replace(/\./g, "").toUpperCase());
+        var inputs = sectionDiv.getElementsByTagName("input");
 
-        var sectionSpan = document.getElementById("section_" + sectionIndex);
-        // sectionSpan.getElementsByTagName("input").forEach(function(element, elementIndex) {
-        //     if (randoms.length > 0 && randoms.indexOf(elementIndex) != -1) {
-        //         element.checked = true;
-        //     } else {
-        //         element.checked = false;
-        //     }
-        // });
-        console.log(sectionSpan.getElementsByTagName("input").length);
-        console.log(randoms);
+        console.log(sectionTitle);
+        for (var i = 0; i < options.length; i++) {
+            console.log(randoms);
+            console.log(inputs[i].checked);
 
-
+            if (randoms.length > 0 && randoms.indexOf(i) != -1) {
+                inputs[i].checked = true;
+            } else {
+                inputs[i].checked = false;
+            }
+        }
     });
 }
 
@@ -35,7 +40,12 @@ function generateRandoms(section) {
     var choose = 1;
 
     if (!limit){
-        limit = size;
+        // Prefer smaller limit size
+        if (Math.random() * 10 < 8) {
+            limit = size / 2;
+        } else {
+            limit = size;            
+        }
     }
 
     if (!section.required) {
