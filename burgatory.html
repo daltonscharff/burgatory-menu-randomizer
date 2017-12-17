@@ -13,10 +13,11 @@
 
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/menu.js"></script>
-    <script src="js/createForm.js"></script>
     <script src="js/randomizeForm.js"></script>
+    <script src="js/calculateCost.js"></script>
+    <script src="js/createForm.js"></script>
 </head>
-<body onload="displayForm()">
+<body onload="displayForm(); calculateCost();">
     <h1>Custom Burger Creator</h1>
 
     <form>
@@ -27,7 +28,8 @@
 				<div class="section" id="section-CHECK_ONE">
 					<label class="section-label">Check One</label>
 				</div>
-                <input type="button" id="randomizeButton" onclick="randomize();" value="Randomize"></input>
+                <input type="button" id="randomizeButton" onclick="randomize(); calculateCost();" value="Randomize"></input>
+                <p id="costArea"></p>
             </div>
 			<div class="grid-item" id="grid-item-1">
 				<div class="section" id="section-PICK_A_BURGER">

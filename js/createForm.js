@@ -37,6 +37,11 @@ function makeSection(section, sectionIndex) {
             selection.setAttribute("type", "checkbox");
         }
 
+
+        selection.addEventListener("change", function() {
+            calculateCost();
+        });
+
         sectionValue.appendChild(selection);
         sectionValue.appendChild(valueLabel);
         sectionDiv.appendChild(sectionValue);

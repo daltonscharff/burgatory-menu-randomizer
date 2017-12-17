@@ -18,11 +18,7 @@ function randomize() {
         var sectionDiv = document.getElementById("section-" + sectionTitle.replace(/ /g, "_").replace(/\./g, "").toUpperCase());
         var inputs = sectionDiv.getElementsByTagName("input");
 
-        console.log(sectionTitle);
         for (var i = 0; i < options.length; i++) {
-            console.log(randoms);
-            console.log(inputs[i].checked);
-
             if (randoms.length > 0 && randoms.indexOf(i) != -1) {
                 inputs[i].checked = true;
             } else {
@@ -44,7 +40,7 @@ function generateRandoms(section) {
         if (Math.random() * 10 < 8) {
             limit = size / 2;
         } else {
-            limit = size;            
+            limit = size;
         }
     }
 
