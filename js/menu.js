@@ -17,7 +17,7 @@ var menu = {
             ]
         },
         {
-            "title":    "Pick a Burger",
+            "title":    "Pick A Burger",
             "limit":    1,
             "required": true,
             "options":  [
@@ -58,7 +58,7 @@ var menu = {
             ]
         },
         {
-            "title":    "Pick a Bun",
+            "title":    "Pick A Bun",
             "limit":    1,
             "required": true,
             "options":    [
@@ -94,7 +94,7 @@ var menu = {
             ]
         },
         {
-            "title":    "Pick a Rub",
+            "title":    "Pick A Rub",
             "limit":    1,
             "required": true,
             "options":  [
@@ -127,8 +127,12 @@ var menu = {
         {
             "title":    "Get Cheezy",
             "limit":    1,
-            "required": false,
+            "required": true,
             "options":  [
+                {
+                    "value":    "No Cheese, Please",
+                    "cost": 0
+                },
                 {
                     "value":    "White American",
                     "cost": 1
@@ -332,8 +336,12 @@ var menu = {
         {
             "title":    "Chips Are Free or Sub...",
             "limit":    1,
-            "required": false,
+            "required": true,
             "options":  [
+                {
+                    "value":    "I'll stick with chips",
+                    "cost": 0
+                },
                 {
                     "value":	"Sea Salt & Herb Fries",
                     "cost": 1.5

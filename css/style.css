@@ -1,0 +1,53 @@
+body {
+    margin: auto;
+	text-align: center;
+}
+
+form {
+    margin: auto;
+	display: inline-block;
+	text-align: left;
+}
+
+input[type=button] {
+    margin: auto;
+}
+
+.grid-container {
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+}
+
+.grid-item {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.section {
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 10px;
+	background-color: lightgrey;
+	white-space: nowrap;
+}
+
+.section-label {
+    background-color: #ff9739;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+._ItUp {
+	font-family: 'Work Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+#grid-item-4, #grid-item-7 {
+	grid-column: 2 / span 2;
+}
+
+#grid-item-3 {
+	grid-row: 2 / span 3;
+}

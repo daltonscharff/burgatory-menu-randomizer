@@ -1,4 +1,0 @@
-function onLoad(){
-    displayForm();
-    loadButton();
-}
